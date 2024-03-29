@@ -6,10 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
-    border: none;
     text-transform: capitalize;
-    transition: all 2s linear; /* Fixed the syntax error here */
 }
 
 html {
@@ -20,7 +17,6 @@ html {
 
 body {
     background: #111;
-    overflow-x: hidden;
     padding-left: 35rem;
 }
 
@@ -64,7 +60,7 @@ header {
     top: 0;
     left: 0;
     height: 100%;
-    width: 35rem;
+    width: 250px;
     background: #1a1a1a;
     display: flex;
     align-items: center;
@@ -125,6 +121,10 @@ header .user .post {
     background: rgb(161, 20, 20);
 }
 
+section{
+    margin-top: 90px;
+}
+
 .home {
     display: flex;
     justify-content: center;
@@ -133,6 +133,7 @@ header .user .post {
 }
 
 .home h3 {
+    margin-top: 60px;
     font-size: 2.5rem;
     color: #fff;
 }
@@ -168,12 +169,12 @@ header .user .post {
 
 .about .row .info h3 {
     font-size: 2rem;
-    color: rgb(161, 20, 20);
+    color: #eee;
     padding: 1rem 0;
 }
 
 .about .row .info h3 span {
-    color: #eee;
+    color: rgb(161, 20, 20);
     padding: 0 0.5rem;
 }
 
@@ -271,7 +272,6 @@ section .education {
     width: 26rem;
     border-radius: 1rem;
     margin: 2rem;
-    overflow: hidden;
     cursor: pointer;
 }
 
@@ -313,7 +313,6 @@ section .education {
     position: fixed;
     bottom: 7.5rem;
     right: 2rem;
-    z-index: 100;
     display: none;
 }
 
